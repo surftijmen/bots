@@ -1,0 +1,17 @@
+{ "bots" :
+    [
+        {
+            "name" : "spamBot",
+            "html"  : "spambot.html"
+        },
+        {
+            "name" : "requestBot",
+            "html"  : "requestbot.html"
+        },
+        {
+            "name" : "imageBot",
+            "html"  : "imagebot.html"
+        }
+
+    ] 
+}

@@ -2,7 +2,7 @@ import pyautogui, time
 
 startDelay = 5
 messageDelay = 0.5
-fileName = "Spam bots/spam.txt"
+fileName = "/../web/recourses/spam.txt"
 
 time.sleep(startDelay)
 

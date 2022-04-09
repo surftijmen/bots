@@ -1,6 +1,6 @@
 import eel
 import random
-from getpage import getPage
+from requestBot.getpage import getPage
 
 eel.init('web')
 

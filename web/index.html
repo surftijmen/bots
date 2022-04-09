@@ -7,14 +7,35 @@
 
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="/eel.js"></script> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+    $(function() {
+   $.getJSON('recourses/bots.json', function(data) {
+       $.each(data.bots, function(i, f) {
+          var tblRow = "<tr>" + "<td><a  href=\""  + f.html + "\">" + f.name + "</a></td>" + "</tr>"
+            $(tblRow).appendTo("#userdata tbody");});});});
+</script>
 </head>
 <body>
+    <a href="spambot.html"><button>Go To Login</button></a>
+    <div id="data">
+    </div>
     <div class="topnav">
         <a id="button-number">Display a random number</a>
         <input id="input" type="text">
         <a id="copy-page">Copy page</a>
     </div>
-    <h1 id="text"></h1> 
+    <div class="wrapper">
+        <div class="profile">
+           <table id= "userdata">
+                <thead>
+                    <th>Bot name</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        </div>
 </body>
-<script src="js/main.js"></script>
 </html>
