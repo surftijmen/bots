@@ -30,8 +30,6 @@ If you can't find the difference between two images, then this is the ideal solu
 - [Clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to your local device
 - Run the `app.py` file to start the application
 
-
 ## Copyright
 
 © Tijmen Meijer 2022
-
