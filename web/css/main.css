@@ -1,13 +1,13 @@
 :root {
-  --main-bg-color: #46B7B9;
-  --topnav-color: #2F9296;
+  --main-bg-color: #7dcacd;
+  --topnav-color: #3a878a;
   --topnav-hover-color: rgb(215, 195, 215);
   --text-color: #f2f2f2;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #2F9296;
+  background-color: var(--topnav-color);
 }
 
 body {

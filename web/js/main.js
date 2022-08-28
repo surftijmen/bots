@@ -1,4 +1,3 @@
-document.getElementById("button-number").addEventListener("click", ()=>{eel.get_random_number()}, false);
 let page = document.getElementById("copy-page");
 let input = document.getElementById("input");
 page.addEventListener("click", ()=>{eel.setPageContent(input.value)}, false);

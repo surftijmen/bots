@@ -11,15 +11,21 @@
 
 <script>
     $(function() {
-   $.getJSON('recourses/bots.json', function(data) {
+    $.getJSON('recourses/bots.json', function(data) {
        $.each(data.bots, function(i, f) {
         let a = document.createElement('a');
-          a.href = f.html;
-          a.text = f.name;
-            let parent = document.getElementById("dropdown");
-            parent.appendChild(a)
-            
-            });});});
+        let display = document.getElementById("display");
+        let parent = document.getElementById("dropdown");
+        
+        a.text = f.name;
+        a.addEventListener('click', function(){
+            display.setAttribute("src", f.html);
+        })
+        
+        parent.appendChild(a)});
+        });
+    });
+
 </script>
 </head>
 <body>
@@ -31,9 +37,11 @@
                 <button class="dropbtn">All bots</button>
                 <div id = "dropdown" class="dropdown-content"></div>
             </div>
-            <a id="button-number">Display a random number</a>
+            <a id="button">Display a random number</a>
             <a id="copy-page">Copy page</a>
         </div>
+        <iframe id="display" src="spambot.html" width="100%" height="100%" frameborder="0"></iframe>
+
     </div>
 </body>
 </html>

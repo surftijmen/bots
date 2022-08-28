@@ -11,6 +11,10 @@
         {
             "name" : "imageBot",
             "html"  : "imagebot.html"
+        },
+        {
+            "name" : "randomBot",
+            "html" : "randombot.html"
         }
 
     ] 
