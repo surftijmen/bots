@@ -4,8 +4,7 @@ import json
 data = requests.get(
     url = "https://api.hypixel.net/player",
     params = {
-        "key": "fcabbf30-6a54-4c9d-af6c-6dcbee1a4245",
-        "uuid": "ff5476d1-0369-4e47-9102-c673e3ad7705"
+        #THESE ARE IN THE GITIGNORED FILE HYPIXELAPIKEY.PY
     }
 ).json()
 
