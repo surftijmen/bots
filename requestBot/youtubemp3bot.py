@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
-from unicodedata import name
 import yt_dlp
+
+path = "S:\Spotify"
 
 # function to download youtube audio
 def downloadMp3():
@@ -12,7 +13,7 @@ def downloadMp3():
             'preferredcodec': 'mp3',
             'preferredquality': '192',
         }],
-        'outtmpl': "S:\clip music" + '/%(title)s.%(ext)s',
+        'outtmpl': path + '/%(title)s.%(ext)s'.format(path),
         'noplaylist':True,        
         }
 

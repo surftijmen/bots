@@ -14,4 +14,5 @@ with open('requestBot/hypixeldata.json', "w") as f:
 
 skywars_coins = data["player"]["stats"]["SkyWars"]["coins"]
 
+print(data)
 print (skywars_coins)
